@@ -1,0 +1,19 @@
+centos7 - 3.10 kernal
+
+so need kernal updata (need admin)
+
+check kernal v -> uname -msr
+
+1.yum -y update
+
+2.yum install yum-plugin-fastestmirror
+
+3. rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+
+check elrepo -> yum repolist
+
+(yum install https://www.elrepo.org/elrepo-release-7.0-4.el7.elrepo.noarch.rpm)
+
+4.yum --enablerepo=elrepo-kernel install kernel-ml kernel-ml-devel
+
+choose uninstall older kernal
